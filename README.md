@@ -24,6 +24,7 @@ A safe, reversible, approval-gated plan to modernise a **Xiaomi Mi TV (MITV-AXS0
 | [`docs/04-launcher-and-ui.md`](docs/04-launcher-and-ui.md) | Projectivy and other launchers, the Apple TV-inspired design spec, and how to install |
 | [`docs/05-adb-workflow.md`](docs/05-adb-workflow.md) | The ADB workflow for later (computer **or** an Android phone running Termux) |
 | [`docs/06-restore-and-recovery.md`](docs/06-restore-and-recovery.md) | How to undo every change, from small fixes up to a factory reset |
+| [`docs/07-app-inventory.md`](docs/07-app-inventory.md) | **Your** system apps, sorted from your photos |
 | `scripts/` | ADB scripts. They are dry-run by default, ask before every change and log everything |
 | `lists/` | Package lists the scripts read, including a hard-coded list of essential packages that are never touched |
 

@@ -56,6 +56,10 @@ com.netflix.ninja
 com.google.android.youtube.tv
 com.amazon.amazonvideo.livingroom
 
+# --- Amlogic platform (this TV's chipset) and Xiaomi core resources ---
+re:^com\.droidlogic\.
+re:(droidlogic|amlogic|miutilres|milegal)
+
 # --- Pattern guards (Xiaomi and vendor components; names vary per firmware) ---
 re:(upgrade|update|ota)
 re:(tvinput|tvservice|tvserver|hdmi|source|input)
