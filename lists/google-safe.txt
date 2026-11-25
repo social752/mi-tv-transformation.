@@ -1,0 +1,11 @@
+# LEVEL: SAFE
+# Google packages that are standard on Android TV 9 and not needed for streaming,
+# the remote, updates or the Play Store. Comment out (#) anything you use.
+# Each package is only touched if it's installed, not already disabled, and you answer "y".
+
+com.google.android.videos                # Google Play Movies & TV
+com.google.android.play.games            # Google Play Games
+com.google.android.feedback              # Feedback / crash report sender
+# com.google.android.youtube.tvmusic     # YouTube Music: uncomment if unused
+# com.google.android.youtube.tvkids      # YouTube Kids: uncomment if unused
+# com.google.android.marvin.talkback     # TalkBack: uncomment if nobody needs it

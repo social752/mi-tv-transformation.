@@ -1,0 +1,2 @@
+# Device backups contain your device serial and settings; keep them out of git.
+backups/

@@ -1,0 +1,4 @@
+# LEVEL: SAFE
+# Intentionally EMPTY. Xiaomi package names differ between firmware builds and regions.
+# This list gets filled in only from YOUR Phase 6 backup (packages-system.txt),
+# after we review it together. Don't add guesses here.

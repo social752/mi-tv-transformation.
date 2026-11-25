@@ -1,0 +1,9 @@
+# LEVEL: CAUTION
+# Phase 7 ONLY: run this after Projectivy has worked reliably for several days.
+# Disabling the stock launchers makes Projectivy the only home app.
+# Undo: bash scripts/03-restore.sh --undo-log <backup_dir>
+
+com.google.android.tvlauncher            # Android TV Home
+com.google.android.tvrecommendations     # Recommendation rows for Android TV Home
+# PatchWall: add the exact package from YOUR backup (packages-system.txt) after review,
+# e.g. com.mitv.tvhome (VERIFY, the name differs between builds and regions)
