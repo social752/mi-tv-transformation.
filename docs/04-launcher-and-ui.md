@@ -12,6 +12,8 @@
 
 **Compatibility check for build PI.6681:** install from the **Play Store on the TV**. If the Play Store shows the app as installable, Google has checked it against your device (Android version and TV features). That's the check we rely on, rather than guessing.
 
+**Your situation (confirmed at Gate 0):** Home is Google's Android TV Home, which shows a "Sponsored by JioHotstar" row and promoted movie rows. Turning off channels reduces this but may not remove the sponsored row, so Projectivy is the main fix for your ads.
+
 ## 2. Design spec: "Apple TV-inspired" home
 
 ```

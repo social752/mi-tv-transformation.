@@ -64,6 +64,20 @@
 | Xiaomi **app store / promotions / "Mi TV" ads services** — VERIFY | Promotional content |
 | **Partner apps** (regional streaming or shopping apps you don't use) | If they show **Uninstall**, simply uninstall them |
 
+### Seen on your TV (India build) — decide per app
+
+| App on your home screen | Suggested category | Notes |
+|---|---|---|
+| Google Play Movies & TV | SAFE | Google is retiring it; its recommendations moved to Home |
+| YouTube Music | SAFE if unused | |
+| Sony LIV | SAFE if unused | Partner app. Usually offers **Uninstall** |
+| JioHotstar | **You decide** | Uninstall if you don't subscribe. The "Sponsored by JioHotstar" row is a Google ad slot and may stay either way |
+| "WallPaper" app | SAFE | Replaced by Projectivy wallpapers |
+| Xiaomi tile (first favourite) | CAUTION — VERIFY | Probably PatchWall or a Xiaomi content app |
+| **TV** (blue tile) | ESSENTIAL | Inputs/Live TV. HDMI and antenna switching |
+| Green cast tile | CAUTION — VERIFY | Probably screen-mirroring/cast. Keep if you cast from your phone |
+| Netflix, YouTube, Prime Video, Play Store | ESSENTIAL | |
+
 ---
 
 ## How this maps to the scripts

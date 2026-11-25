@@ -41,6 +41,21 @@
 | Factory reset needed | Very low | High (logins lost) | Only as a last resort. All changes are user-level, and a reset fully restores the stock state |
 | Apps drop Android 9 support over the years | Medium (long term) | Medium | Not fixable in software without new firmware. If it happens, a low-cost streaming stick is the only real fix (noted, not recommended now) |
 
-## 5. Verdict
+## 5. Confirmed at Gate 0 (from your photos, 25 Nov 2026)
+
+| Item | Finding | Effect |
+|---|---|---|
+| Model | About shows `MITV-AXSO0` / `MITV-AXS00`. The font doesn't distinguish **O** from **0**. The Netflix ESN on the same screen reads `...XIAOMMITV-AXSO0...` | Still unresolved. `scripts/00-verify-device.sh` reads the exact string and explains if only O/0 differ |
+| Device codename | Netflix ESN contains **`DANGAL`** | Netflix certification is intact (the ESN is the Widevine/Netflix device identity). Never root or modify the system |
+| Android / build / patch / kernel | 9 · `PI.6681 release-keys` · 5 Jan 2022 · 4.9.113 (23 Mar 2022) | Matches `scripts/config.sh` |
+| Region | **India** (JioHotstar, Sony LIV, Indian content rows) | Partner apps to review: Sony LIV, JioHotstar, the "WallPaper" app, Xiaomi tile |
+| Home screen | **Android TV Home (2024+ design)**: tabs *Search · For you · Shop · Apps*, rows "Top-selling movies", "Popular movies and TV shows", "Trending on Google" and **"Sponsored by JioHotstar"** | Ads come from **Google's** launcher (`com.google.android.tvlauncher`). PatchWall is installed (it has its own Device Preferences entry) but isn't the Home app. Some sponsored rows may not have an off switch, so **Phase 4 (new launcher) gives the biggest improvement** |
+| Google Play Movies & TV | Banner: "Your personalised recommendations have moved to the Home" | Play Movies is being retired. **SAFE to disable** |
+| Remote | **No microphone** | Voice isn't used. `com.google.android.katniss` still stays ESSENTIAL, because it powers the Search tab. Smoke test check 3 changed to typed search |
+| Settings entries | Device Preferences has **Picture**, **Sound**, **Power**, **Timer** and **PatchWall** | Xiaomi picture/sound/power components are ESSENTIAL (already covered by the denylist patterns) |
+
+> Privacy tip: the **Netflix ESN** is a unique device identifier. Crop it out of any photos you post publicly.
+
+## 6. Verdict
 
 The device is a **good candidate** for a non-root transformation. The gains come mostly from (1) replacing the ad-serving launcher, (2) cutting background and autoplay activity, and (3) disabling unused preinstalled apps. All three are possible without root on Android TV 9.

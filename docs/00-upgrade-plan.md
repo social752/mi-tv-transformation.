@@ -39,7 +39,7 @@ Detailed steps: `02-tv-only-guide.md §A`.
 - [ ] 1.5 Turn off Xiaomi or PatchWall "user experience" / personalised-ads switches if your firmware shows them
 - [ ] 1.6 Google account privacy controls, done from your phone
 
-**Risk:** very low. Streaming apps aren't affected. Voice search keeps working, because we keep the microphone permission for Google/Assistant.
+**Risk:** very low. Streaming apps aren't affected. The Search bar on the home screen keeps working (your remote has no microphone, so voice isn't involved).
 **🔒 Gate 1**
 
 ---
@@ -82,7 +82,7 @@ Detailed steps: `04-launcher-and-ui.md`.
 - [ ] 4.2 Build the layout: a dark wallpaper and a "Top Shelf" favourites row with Netflix, YouTube and Prime Video
 - [ ] 4.3 Optional: the **Aerial Views** screensaver, for Apple TV-style aerial footage
 - [ ] 4.4 Make Home open Projectivy, using its built-in "override" option (an accessibility service, no ADB needed)
-- [ ] 4.5 Test for 2–3 days: Home button, Netflix/Prime buttons on the remote, voice search, HDMI inputs, power on/off
+- [ ] 4.5 Test for 2–3 days: Home button, Netflix/Prime buttons on the remote, typed search, HDMI inputs, power on/off
 
 **Risk:** low. The old launcher isn't removed; turning off the override puts it back right away.
 **🔒 Gate 4:** report how the 2–3 day test went before we take anything away.
@@ -94,7 +94,7 @@ Detailed steps: `04-launcher-and-ui.md`.
 Detailed steps: `02-tv-only-guide.md §D` plus `03-package-catalog.md`.
 
 - [ ] 5.1 Using the Phase 0 photos, mark each system app SAFE, CAUTION or ESSENTIAL (I'll do this with you)
-- [ ] 5.2 Disable **one SAFE app at a time** through Settings → Apps → *app* → **Disable**, then test (5 checks: Home, remote, voice, one streaming app, HDMI input)
+- [ ] 5.2 Disable **one SAFE app at a time** through Settings → Apps → *app* → **Disable**, then test (5 checks: Home, remote, search, one streaming app, HDMI input)
 - [ ] 5.3 Keep a written log: date, app name, what you tested, result
 - [ ] 5.4 Don't touch CAUTION apps until we have ADB and a full backup
 
@@ -139,7 +139,7 @@ Detailed steps: `02-tv-only-guide.md §D` plus `03-package-catalog.md`.
 
 1. **Home** button opens your launcher
 2. **Remote** works: D-pad, Back, volume, the Netflix and Prime buttons
-3. **Voice search** (mic button) answers
+3. **Search**: the Search bar on the home screen (or inside YouTube) finds a title when you type it
 4. **Streaming:** one minute of Netflix *or* YouTube plays with sound
 5. **Inputs:** switching to an HDMI source works (if you use one)
 
