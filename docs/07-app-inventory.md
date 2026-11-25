@@ -2,7 +2,7 @@
 
 Source: 14 photos of Settings → Apps → System apps. The labels are as shown on your TV. Package names are confirmed later from the ADB backup.
 **Chipset:** the `com.droidlogic.*` / "Droid…" apps show that this TV uses an **Amlogic** SoC. All of them are platform components and are ESSENTIAL.
-**Your usage:** no HDMI devices, no microphone on the remote, region India.
+**Your usage (confirmed):** you **cast** from your phone, you **use HDMI**, the remote has no microphone, region India.
 
 ## ✅ SAFE: disable from the TV (Phase 5, one at a time, after approval)
 
@@ -23,20 +23,26 @@ Source: 14 photos of Settings → Apps → System apps. The labels are as shown 
 |---|---|---|
 | **Analytics** (16.7 MB) | Usage analytics / telemetry | Privacy win. Try Disable. If greyed out, wait for ADB |
 | **com.xiaomi.statistic.App** | Xiaomi usage statistics (telemetry) | Same as above |
-| MiLink | Xiaomi phone-to-TV link/cast | Fine to disable if you don't cast from a Xiaomi/Redmi phone |
-| WfdSinkHelperService | Miracast screen-mirroring receiver | Fine to disable if you never mirror your phone screen |
-| Google Cast (114 MB) | Chromecast built-in | **Keep if you cast YouTube/Netflix from your phone** |
 | MiTvShowTime | Xiaomi screensaver/showcase component | Check what it does before deciding |
 | PatchWall Update Service (88.7 MB) | Keeps PatchWall updated (not the TV's firmware updater) | Only after Projectivy is your home. The scripts block it by default because its name contains "update" |
 | PumpkinService / Speech Recognition and Synthesis | Offline speech and text-to-speech | No mic means low use, but the space saved is small. Leave for now |
 | TV lock | Parental lock | Disable only if you never use parental PINs |
 | Android TV Home (99 MB) | Current launcher (source of the sponsored rows) | Phase 7, only after Projectivy has been tested |
 
+## 📡 KEEP: you cast and use HDMI
+
+| App (label) | Why it stays |
+|---|---|
+| **Google Cast** (114 MB) | Chromecast built-in: casting from the YouTube/Netflix/Prime apps on your phone |
+| **WfdSinkHelperService** | Screen mirroring (Miracast) receiver |
+| **MiLink** | Xiaomi phone-to-TV casting. Revisit only after we confirm which casting method you use |
+| **TV** tile / DroidLiveTv / DroidLogicTvInput | HDMI input switching |
+
 ## ⛔ ESSENTIAL: never disable
 
 Android system, System UI, Settings / Settings Storage / Device configuration, **Bluetooth**, Input Devices, Key Chain, Package installer, Package Access Helper, Media Storage, Download Manager, External Storage, TV Storage, Contacts/Calendar Storage, Shell, CaptivePortalLogin (Wi-Fi login pages), Certificate Installer, ProxyHandler, PacProcessor, VpnDialogs, SecureElementApplication, Intent Filter Verification Service, Activity Stub, Android Services/Shared Library, WebView, WebContent, HTML Viewer, Companion Device Manager, **Google**, **Google Play services**, **Google Services Framework**, Google Backup Transport, Google One Time Init, One Time Init, Google Partner Set Up, Google Calendar Sync, **Gboard** (on-screen keyboard), **Android TV core services**, **Android TV Remote Service**, Android TV Tools, **Setup Wizard**, SetupCustomizer, Second Screen Setup Auth Bridge, **TvService**, **DroidLiveTv**, **DroidLogicTvInput**, **droidlogic System**, **Droid Settings**, **Droid Sound Effect Settings**, com.droidlogic.ble (likely the **remote's Bluetooth link**), com.droidlogic.overlay, **MiUtilRes**, milegal, Android Accessibility Suite (Projectivy's Home override uses the accessibility system), and the tiny `com.android.*` helpers (ctsshim, sharedstoragebackup, smspush, wallpaperbackup, wallpapercropper, backupconfirm, leanbacklauncher stubs).
 
-> Even though you don't use HDMI, **TvService / DroidLiveTv / DroidLogicTvInput stay**. On a TV (unlike a streaming box) they drive the panel's picture, sound and source pipeline.
+> **TvService / DroidLiveTv / DroidLogicTvInput** run HDMI switching and also the panel's picture, sound and source pipeline. They're protected by the scripts.
 
 ## Still to photograph
 The **"Downloaded apps"** section *above* "System apps" (Sony LIV, JioHotstar, YouTube Music, Play Movies, the WallPaper app, PatchWall and so on).

@@ -51,6 +51,10 @@ com.google.android.onetimeinitializer
 com.google.android.backuptransport
 com.google.android.syncadapters.contacts
 
+# --- Casting (user casts from phone) ---
+com.google.android.apps.mediashell
+re:(wfd|miracast|milink)
+
 # --- Streaming apps the user wants to keep ---
 com.netflix.ninja
 com.google.android.youtube.tv

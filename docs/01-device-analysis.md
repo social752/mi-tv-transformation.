@@ -51,6 +51,8 @@
 | Region | **India** (JioHotstar, Sony LIV, Indian content rows) | Partner apps to review: Sony LIV, JioHotstar, the "WallPaper" app, Xiaomi tile |
 | Home screen | **Android TV Home (2024+ design)**: tabs *Search · For you · Shop · Apps*, rows "Top-selling movies", "Popular movies and TV shows", "Trending on Google" and **"Sponsored by JioHotstar"** | Ads come from **Google's** launcher (`com.google.android.tvlauncher`). PatchWall is installed (it has its own Device Preferences entry) but isn't the Home app. Some sponsored rows may not have an off switch, so **Phase 4 (new launcher) gives the biggest improvement** |
 | Google Play Movies & TV | Banner: "Your personalised recommendations have moved to the Home" | Play Movies is being retired. **SAFE to disable** |
+| Usage | **Casts from phone, uses HDMI** | Google Cast, screen mirroring, MiLink and the TV inputs are KEPT. Smoke test check 5 (HDMI) applies |
+| Computer | **Laptop available** (from 25 Nov 2026) | ADB phases (6–8) are now possible |
 | Remote | **No microphone** | Voice isn't used. `com.google.android.katniss` still stays ESSENTIAL, because it powers the Search tab. Smoke test check 3 changed to typed search |
 | Settings entries | Device Preferences has **Picture**, **Sound**, **Power**, **Timer** and **PatchWall** | Xiaomi picture/sound/power components are ESSENTIAL (already covered by the denylist patterns) |
 

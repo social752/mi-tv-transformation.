@@ -34,7 +34,7 @@ set_setting global transition_animation_scale 0.5 "Transition animation"
 set_setting global animator_duration_scale    0.5 "Animator duration"
 
 echo
-echo "== Optional: ad/tracker-blocking Private DNS (CAUTION, see docs/05-adb-workflow.md §7) =="
+echo "== Optional: ad/tracker-blocking Private DNS (CAUTION, see docs/05-adb-workflow.md §8) =="
 set_setting global private_dns_mode      hostname            "Private DNS mode"
 set_setting global private_dns_specifier dns.adguard-dns.com "Private DNS server"
 
