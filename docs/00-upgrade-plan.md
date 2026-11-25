@@ -105,7 +105,7 @@ Detailed steps: `02-tv-only-guide.md §D` plus `03-package-catalog.md`.
 
 ## Phase 6 — ADB: verify and back up (needs a computer or an Android phone)
 
-- [ ] 6.1 Set up ADB (`05-adb-workflow.md`)
+- [ ] 6.1 Set up ADB (`05-adb-workflow.md`). **Shortcut:** `bash scripts/run-phase6.sh <TV-IP>` does 6.2–6.3 and writes `share-with-claude.txt` for 6.4
 - [ ] 6.2 Run `scripts/00-verify-device.sh`. It confirms the model, Android 9 and PI.6681, or stops.
 - [ ] 6.3 Run `scripts/01-backup.sh`. It saves every package, its state, settings and the current home app.
 - [ ] 6.4 Send me `packages-system.txt` and `packages-disabled.txt` from the backup, and I'll write a device-specific `lists/xiaomi-safe.txt`

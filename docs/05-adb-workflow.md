@@ -65,6 +65,9 @@ export ANDROID_SERIAL=192.168.1.50:5555     # YOUR TV's IP; makes every script t
 
 ## 6. Run order (each script asks before changing anything)
 
+**Shortcut for Phase 6:** `bash scripts/run-phase6.sh <TV-IP>` connects, verifies and backs up in one go (read-only). It also writes `share-with-claude.txt`, which leaves out the serial number.
+
+
 | Step | Command | Changes the TV? |
 |---|---|---|
 | 1 | `bash scripts/00-verify-device.sh` | No. Stops unless the model, Android 9 and PI.6681 match `scripts/config.sh` |
